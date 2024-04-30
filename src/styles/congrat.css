@@ -1,0 +1,39 @@
+.congrat{
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    margin: auto;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100px);
+    gap: 0.5rem;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.congrat.open{
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.congratButton{
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(255,255,255,0.9);
+    background:none;
+    transition: background 0.5s ease-in-out;
+}
+
+.congratButton:hover{
+    background: steelblue;
+    color: black;
+}
+
